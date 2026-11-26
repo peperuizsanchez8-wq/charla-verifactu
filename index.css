@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{scroll-behavior:smooth;color-scheme:light}
+body{@apply bg-sand text-ink antialiased}
+.field-input{@apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-ink outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/30}
+.field-input.invalid{@apply border-red-600 ring-1 ring-red-600/30}
+.label{@apply mb-1.5 block text-sm font-semibold}
+.err{@apply mt-1 text-sm text-red-700}
